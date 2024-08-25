@@ -40,11 +40,11 @@
 
         default_layer {
             bindings = <
- &kp EQUAL    &kp N1       &kp N2         &kp N3   &kp N4            &kp N5              &tog 0                                                                        &mo 3         &kp N6                &kp N7            &kp N8             &kp N9                 &kp N0  &kp BACKSLASH
- &kp GRAVE     &kp B        &kp Y          &kp O    &kp U  &kp SINGLE_QUOTE              &tog 1                                                                        &none  &kp SEMICOLON                 &kp L             &kp D              &kp W                  &kp V          &kp Z
-   &kp ESC     &kp C        &kp I          &kp E    &kp A         &kp COMMA              &tog 4  &kp LEFT_WIN  &kp LALT                  &kp RCTRL  &kp RIGHT_WIN      &none        &kp DOT                 &kp H             &kp T              &kp S                  &kp N          &kp Q
- &kp LSHFT     &kp G        &kp X          &kp J    &kp K         &kp MINUS                                    &kp HOME                    &kp TAB                                &kp SLASH                 &kp R             &kp M              &kp F                  &kp P      &kp RSHFT
-     &mo 2  &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END                              &kp BSPC       &kp DEL     &mo 5                      &mo 5      &kp ENTER  &kp SPACE                 &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS          &mo 2
+        &kp EQUAL          &kp N1          &kp N2                &kp N3                 &kp N4  &kp N5                   &tog 0                                                           &mo 3         &kp N6             &kp N7             &kp N8           &kp N9           &kp N0         &kp SLASH
+ &kp SINGLE_QUOTE           &kp J           &kp F                 &kp M                  &kp P   &kp V                   &tog 1                                                           &none  &kp SEMICOLON            &kp DOT              &kp D            &kp W            &kp V  &kp SINGLE_QUOTE
+            &kp Z  &mt LEFT_WIN R  &mt LEFT_ALT S           &mt LCTRL N       &mt LEFT_SHIFT D   &kp B                   &tog 4   &none    &none                    &none      &none      &none      &kp COMMA  &mt RIGHT_SHIFT A        &mt RCTRL E  &mt RIGHT_ALT I  &mt RIGHT_WIN H             &kp Q
+        &kp LCTRL           &kp X           &kp G                 &kp L                  &kp C   &kp W                                   &kp TAB                  &kp ESC                            &kp MINUS              &kp U              &kp O            &kp Y            &kp K         &kp RCTRL
+            &mo 2    &kp LEFT_ALT           &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                    &kp BACKSPACE   &kp T    &mo 5                    &mo 5  &kp SPACE  &kp ENTER                  &kp LEFT_BRACKET  &kp RIGHT_BRACKET            &none    &kp RIGHT_ALT             &mo 2
             >;
         };
 
@@ -95,6 +95,66 @@
    &kp ESC      &trans  &kp LEFT_ARROW  &kp DOWN_ARROW   &kp RIGHT_ARROW    &kp PAGE_UP            &trans  &trans  &trans                  &trans  &trans  &trans         &kp PLUS                &kp N4            &kp N5             &kp N6              &kp MINUS  &trans
    &kp TAB      &trans      &kp K_COPY          &trans       &kp K_PASTE  &kp PAGE_DOWN                            &trans                  &trans                  &kp KP_MULTIPLY                &kp N1            &kp N2             &kp N3              &kp SLASH  &trans
     &trans  &kp K_MENU    &kp K_VOL_DN    &kp K_VOL_UP        &kp K_MUTE                           &trans  &trans  &trans                  &trans  &trans  &kp N0                   &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &trans
+            >;
+        };
+
+        layer_Miroku_Nav {
+            bindings = <
+ &trans        &trans        &trans     &trans          &trans  &trans            &trans                                                             &trans        &trans          &trans          &trans        &trans           &trans  &trans
+ &trans        &trans        &trans     &trans          &trans  &trans            &trans                                                             &trans    &kp K_REDO     &kp K_PASTE      &kp K_COPY     &kp K_CUT       &kp K_UNDO  &trans
+ &trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &trans            &trans  &trans  &trans                     &trans         &trans   &trans  &kp CAPSLOCK  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+ &trans        &trans        &trans     &trans          &trans  &trans                            &trans                     &trans                            &kp INSERT        &kp HOME   &kp PAGE_DOWN   &kp PAGE_UP          &kp END  &trans
+ &trans        &trans        &trans     &trans          &trans                    &trans  &trans  &trans                  &kp ENTER  &kp BACKSPACE  &kp DEL                        &trans          &trans        &trans           &trans  &trans
+            >;
+        };
+
+        layer_Miroku_Mouse {
+            bindings = <
+ &trans        &trans        &trans     &trans          &trans  &trans            &trans                                                  &trans      &trans          &trans          &trans        &trans           &trans  &trans
+ &trans        &trans        &trans     &trans          &trans  &trans            &trans                                                  &trans  &kp K_REDO     &kp K_PASTE      &kp K_COPY     &kp K_CUT       &kp K_UNDO  &trans
+ &trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &trans            &trans  &trans  &trans                  &trans  &trans  &trans      &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+ &trans        &trans        &trans     &trans          &trans  &trans                            &trans                  &trans                      &trans        &kp HOME   &kp PAGE_DOWN   &kp PAGE_UP          &kp END  &trans
+ &trans        &trans        &trans     &trans          &trans                    &trans  &trans  &trans                  &trans  &trans  &trans                      &trans          &trans        &trans           &trans  &trans
+            >;
+        };
+
+        layer_Miroku_Button {
+            bindings = <
+ &trans        &trans        &trans      &trans          &trans      &trans            &trans                                                  &trans      &trans           &trans      &trans         &trans         &trans  &trans
+ &trans    &kp K_UNDO     &kp K_CUT  &kp K_COPY     &kp K_PASTE  &kp K_REDO            &trans                                                  &trans  &kp K_REDO      &kp K_PASTE  &kp K_COPY      &kp K_CUT     &kp K_UNDO  &trans
+ &trans  &kp LEFT_WIN  &kp LEFT_ALT   &kp LCTRL  &kp LEFT_SHIFT      &trans            &trans  &trans  &trans                  &trans  &trans  &trans      &trans  &kp RIGHT_SHIFT   &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_WIN  &trans
+ &trans    &kp K_UNDO     &kp K_CUT  &kp K_COPY     &kp K_PASTE  &kp K_REDO                            &trans                  &trans                  &kp K_REDO      &kp K_PASTE  &kp K_COPY      &kp K_CUT     &kp K_UNDO  &trans
+ &trans        &trans        &trans      &trans          &trans                        &trans  &trans  &trans                  &trans  &trans  &trans                       &trans      &trans         &trans         &trans  &trans
+            >;
+        };
+
+        layer_Miroku_Media {
+            bindings = <
+ &trans        &trans        &trans     &trans          &trans  &trans            &trans                                                                    &trans  &trans          &trans             &trans           &trans        &trans  &trans
+ &trans        &trans        &trans     &trans          &trans  &trans            &trans                                                                    &trans  &trans          &trans             &trans           &trans        &trans  &trans
+ &trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &trans            &trans  &trans  &trans                      &trans            &trans      &trans  &trans  &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp C_NEXT  &trans
+ &trans        &trans        &trans     &trans          &trans  &trans                            &trans                      &trans                                &trans    &bt BT_SEL 0       &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &trans
+ &trans        &trans        &trans     &trans          &trans                    &trans  &trans  &trans                  &kp C_STOP  &kp C_PLAY_PAUSE  &kp C_MUTE                  &trans             &trans           &trans        &trans  &trans
+            >;
+        };
+
+        layer_Miroku_Num {
+            bindings = <
+ &trans            &trans  &trans  &trans  &trans             &trans             &trans                                                     &trans  &trans           &trans     &trans         &trans         &trans  &trans
+ &trans  &kp LEFT_BRACKET  &kp N7  &kp N8  &kp N9  &kp RIGHT_BRACKET             &trans                                                     &trans  &trans           &trans     &trans         &trans         &trans  &trans
+ &trans     &kp SEMICOLON  &kp N4  &kp N5  &kp N6          &kp EQUAL             &trans  &trans     &trans                  &trans  &trans  &trans  &trans  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_WIN  &trans
+ &trans         &kp GRAVE  &kp N1  &kp N2  &kp N3      &kp BACKSLASH                                &trans                  &trans                  &trans           &trans     &trans         &trans         &trans  &trans
+ &trans            &trans  &trans  &trans  &trans                               &kp DOT  &kp N0  &kp MINUS                  &trans  &trans  &trans                   &trans     &trans         &trans         &trans  &trans
+            >;
+        };
+
+        layer_Miroku_Sym {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
