@@ -50,9 +50,9 @@
 
         layer_keypad {
             bindings = <
-   &kp ESC  &kp ENTER     &kp SPACE     &kp TAB      &kp DELETE  &kp INSERT               &none                                                                        &mo 3        &kp CARET            &kp DOLLAR          &kp HASH        &kp AT_SIGN               &kp EXCL     &trans
-   &kp TAB  &kp LSHFT    &kp K_REDO  &kp K_UNDO   &kp BACKSPACE       &kp A               &none                                                                        &none      &kp PERCENT             &kp KP_N7         &kp KP_N8          &kp KP_N9              &kp COLON     &trans
-   &kp ESC   &kp LWIN  &kp LEFT_ALT   &kp LCTRL      &kp LSHIFT       &kp B               &none  &kp LEFT_WIN  &kp LALT                  &kp RCTRL  &kp RIGHT_WIN      &none         &kp PLUS             &kp KP_N4         &kp KP_N5          &kp KP_N6              &kp MINUS     &trans
+   &kp ESC  &kp ENTER     &kp SPACE     &kp TAB      &kp DELETE  &kp INSERT              &tog 0                                                                        &mo 3        &kp CARET            &kp DOLLAR          &kp HASH        &kp AT_SIGN               &kp EXCL     &trans
+   &kp TAB  &kp LSHFT    &kp K_REDO  &kp K_UNDO   &kp BACKSPACE       &kp A              &tog 1                                                                      &tog 13      &kp PERCENT             &kp KP_N7         &kp KP_N8          &kp KP_N9              &kp COLON     &trans
+   &kp ESC   &kp LWIN  &kp LEFT_ALT   &kp LCTRL      &kp LSHIFT       &kp B              &tog 4  &kp LEFT_WIN  &kp LALT                  &kp RCTRL  &kp RIGHT_WIN      &none         &kp PLUS             &kp KP_N4         &kp KP_N5          &kp KP_N6              &kp MINUS     &trans
  &kp LSHFT     &trans        &trans      &trans  &kp UNDERSCORE       &kp C                                    &kp HOME                  &kp PG_UP                            &kp KP_MULTIPLY             &kp KP_N1         &kp KP_N2          &kp KP_N3              &kp SLASH  &kp RSHFT
      &mo 2     &trans        &trans    &kp LEFT       &kp RIGHT                        &kp BSPC       &kp DEL   &kp END                  &kp PG_DN      &kp ENTER  &kp KP_N0                   &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS      &mo 2
             >;
