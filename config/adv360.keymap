@@ -83,7 +83,7 @@
       &kp EQUAL            &kp N1     &kp N2     &kp N3   &kp N4  &kp N5              &tog 0                                                                           &tog 3  &kp N6                &kp N7            &kp N8             &kp N9                 &kp N0    &kp BACKSLASH
       &kp GRAVE  &kp SINGLE_QUOTE  &kp COMMA    &kp DOT    &kp P   &kp Y              &tog 1                                                                          &tog 13   &kp F                 &kp G             &kp C              &kp R                  &kp L        &kp SLASH
         &kp ESC             &kp A      &kp O      &kp E    &kp U   &kp I              &tog 4  &kp LEFT_WIN  &kp LEFT_ALT                  &kp RCTRL  &kp RIGHT_WIN      &none   &kp D                 &kp H             &kp T              &kp N                  &kp S        &kp MINUS
- &kp LEFT_SHIFT     &kp SEMICOLON      &kp Q      &kp J    &kp K   &kp X                                        &kp HOME                  &kp PG_UP                             &kp B                 &kp M             &kp W              &kp V                  &kp Z  &kp RIGHT_SHIFT
+ &kp LEFT_SHIFT     &kp SEMICOLON      &kp Q      &kp J    &kp K   &kp X                                         &kp TAB                    &kp ESC                             &kp B                 &kp M             &kp W              &kp V                  &kp Z  &kp RIGHT_SHIFT
           &mo 2          &kp HOME  &kp PG_UP  &kp PG_DN  &kp END                    &kp BSPC       &kp DEL         &mo 5                      &mo 5      &kp ENTER  &kp SPACE          &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS            &mo 2
             >;
         };
